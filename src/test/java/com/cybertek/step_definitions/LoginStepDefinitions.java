@@ -32,6 +32,7 @@ public class LoginStepDefinitions {
 
     @Then("Expenses title should be displayed")
     public void expenses_title_should_be_displayed() {
+
         BrowserUtils.verifyElementDisplayed(loginPage.ExpensesButton);
     }
 

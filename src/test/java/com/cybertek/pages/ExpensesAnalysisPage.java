@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class ExpensesAnalysisPage {
-    public ExpensesAnalysisPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public ExpensesAnalysisPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "(//div[@class='o_sub_menu_content']/div/div)[10]")
@@ -31,7 +33,7 @@ public class ExpensesAnalysisPage {
     @FindBy(xpath = "//div[@class='o_form_sheet_bg']")
     public WebElement ExpenseForm;
 
-    @FindBy (xpath = "//input[@class='o_field_char o_field_widget o_input o_required_modifier']")
+    @FindBy(xpath = "//input[@class='o_field_char o_field_widget o_input o_required_modifier']")
     public WebElement ExpenseDescription;
 
     @FindBy(xpath = "//div[@name='product_id']")
@@ -49,5 +51,15 @@ public class ExpensesAnalysisPage {
     @FindBy(xpath = "//button[@accesskey='s']")
     public WebElement SaveButton;
 
+    @FindBy(xpath = "//ul[@class='dropdown-menu o_graph_measures_list']/li")
+    public List<WebElement> MeasureMenu;
 
+    @FindBy(xpath = "//div[@class='btn-group btn-group-sm']/button")
+    public List<WebElement> GraphicsIcons;
+
+//    @FindBy(xpath = "//div[@class='btn-group btn-group-sm']")
+//    public WebElement allGrahphicIcons;
+
+    @FindBy(xpath = "//div[@class='btn-group btn-group-sm o_cp_switch_buttons']/button")
+    public List<WebElement> FourActions;
 }

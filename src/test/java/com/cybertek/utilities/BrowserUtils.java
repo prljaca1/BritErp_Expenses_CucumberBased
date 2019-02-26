@@ -57,6 +57,8 @@ public class BrowserUtils {
         return elemTexts;
     }
 
+
+
     public static List<String> getElementsText(By locator) {
 
         List<WebElement> elems = Driver.getDriver().findElements(locator);
