@@ -32,7 +32,7 @@ public class LoginPage {
 
     public void logIn(String email,String password) {
 
-        demo.click();
+        //demo.click();
        this.email.sendKeys(email);
        this.password.sendKeys(password);
        loginButton.click();
