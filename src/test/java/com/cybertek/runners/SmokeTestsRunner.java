@@ -12,7 +12,11 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cybertek/step_definitions"
         , dryRun =false
+<<<<<<< HEAD
         , tags = "@fun"
+=======
+        , tags = "@smoke"
+>>>>>>> ff419d85e818117bf939abedefdc9d5cadda3120
 
 )
 
