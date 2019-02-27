@@ -1,7 +1,5 @@
+@sule
 Feature: Check the title for each module in Lunch pageBackground:
-
-
-
 
   Scenario:  Verify the titles is display
     Given user is on the login page
@@ -23,7 +21,7 @@ Feature: Check the title for each module in Lunch pageBackground:
     And user should click Expenses button
     Then  user should be able to click Expenses to Submit   Button
 
-  @smoke
+  #@smoke
   Scenario:  Verify that import  button  is clickable and title is visiable
     Given user is on the login page
     When user logs in using "in_ex_manager2@info.com" and "LLighg89"

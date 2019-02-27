@@ -7,11 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="BritErp_Expenses_CucumberBased" />
-        <module name="Odoo_Expenses_CucumberBased" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="BritErp_Expenses_CucumberBased" target="1.8" />
+      <module name="Odoo_Expenses_CucumberBased" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
