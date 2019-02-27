@@ -7,7 +7,7 @@ Feature: Check the title for each module in Lunch pageBackground:
     Given user is on the login page
     When user logs in using "in_ex_manager2@info.com" and "LLighg89"
     Then Expenses title should be displayed
-    And user should be able to click Expenses Button
+    And  user should click Expenses button
 
     Then following title should be Display:
 
@@ -20,7 +20,7 @@ Feature: Check the title for each module in Lunch pageBackground:
     Given user is on the login page
     When user logs in using "in_ex_manager2@info.com" and "LLighg89"
     Then Expenses title should be displayed
-    And user should be able to click Expenses Button
+    And user should click Expenses button
     Then  user should be able to click Expenses to Submit   Button
 
   @smoke
@@ -28,7 +28,7 @@ Feature: Check the title for each module in Lunch pageBackground:
     Given user is on the login page
     When user logs in using "in_ex_manager2@info.com" and "LLighg89"
     Then Expenses title should be displayed
-    And user should be able to click Expenses Button
+    And user should click Expenses button
     When user should be able to click "Create" button
     Then following title should be Display on the createPage:
 
@@ -41,10 +41,10 @@ Feature: Check the title for each module in Lunch pageBackground:
 
 #    Then the following link is clickable
 #    |Create   |
-Scenario: Verify that Expenses description table can be able to fill it up
-  Given user is on the login page
-  When user logs in using "in_ex_manager2@info.com" and "LLighg89"
-  Then Expenses title should be displayed
-  And user should be able to click Expenses Button
-  When user should be able to click "Create" button
-  #Then user should be able
+#Scenario: Verify that Expenses description table can be able to fill it up
+#  Given user is on the login page
+#  When user logs in using "in_ex_manager2@info.com" and "LLighg89"
+#  Then Expenses title should be displayed
+#  And user should be able to click Expenses Button
+#  When user should be able to click "Create" button
+#  #Then user should be able
