@@ -9,10 +9,10 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports",
                 "json:target/cucumber.json"
         },
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/searchFunctionality",
         glue = "com/cybertek/step_definitions"
-        , dryRun = false
-        , tags = "@wip"
+        , dryRun = true
+        , tags = "@an"
 
 )
 
