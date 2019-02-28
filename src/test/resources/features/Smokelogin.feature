@@ -4,7 +4,7 @@ Feature: log in functionality
     Given user is on the landing page
     When user logs in using "<user_email>" and "<user_password>"
     And system displays Expenses Analysis title
-    Then the title should be "#Inbox-Odoo"
+    Then the title should be "#Inbox - Odoo"
 
     Examples:
       | user_email                    | user_password     |

@@ -1,6 +1,7 @@
 package com.cybertek.step_definitions;
 
 import com.cybertek.pages.LoginPage;
+import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.ConfigurationReader;
 import com.cybertek.utilities.Driver;
 import cucumber.api.java.en.Given;
@@ -22,6 +23,7 @@ public class SmokeloginStepDefinition {
 
     @Then("the title should be {string}")
     public void the_title_should_be(String expectedTitle) {
+        BrowserUtils.waitForPageToLoad(3);
         Assert.assertTrue(expectedTitle.contains(Driver.getDriver().getTitle()));
     }
 
