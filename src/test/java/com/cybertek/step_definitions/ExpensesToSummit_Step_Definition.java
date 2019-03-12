@@ -2,15 +2,16 @@ package com.cybertek.step_definitions;
 
 import com.cybertek.pages.ExpensesToSummitPage;
 import com.cybertek.pages.LoginPage;
+import com.cybertek.utilities.BrowserUtils;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
 
 import java.util.List;
 
 public class ExpensesToSummit_Step_Definition {
-   LoginPage loginPage=new LoginPage();
+    LoginPage loginPage = new LoginPage();
 
-   ExpensesToSummitPage ExpensesToSummit= new ExpensesToSummitPage();
+    ExpensesToSummitPage ExpensesToSummit = new ExpensesToSummitPage();
 
     @Then("following title should be Display:")
     public void following_title_should_be_Display(List<String> titles) {

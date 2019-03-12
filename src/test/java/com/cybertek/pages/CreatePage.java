@@ -32,6 +32,10 @@ public class CreatePage {
     @FindBy(xpath = "(//div[@class='o_form_buttons_edit']/button)[2]")
     public WebElement discard;
 
+    @FindBy(xpath = "(//div[@class='o_input_dropdown'])[1]")
+
+     public WebElement product;
+
     public List<String> createTitle(){
         List<String > nameList = new ArrayList<>();
         nameList.add(submitToManagar.getText());
