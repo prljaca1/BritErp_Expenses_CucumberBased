@@ -1,5 +1,6 @@
 package com.cybertek.step_definitions;
 
+import com.cybertek.utilities.DataBaseUtility;
 import com.cybertek.utilities.Driver;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -35,5 +36,14 @@ public class Hooks {
        // Driver.closeDriver();
     }
 
+    @Before
+    public void setUpDBConnection() {
+        DataBaseUtility.createConnection();
+    }
+
+    @After
+    public void closeDBConnection(){
+        DataBaseUtility.closeConnection();
+    }
 
 }

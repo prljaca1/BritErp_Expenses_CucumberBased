@@ -1,5 +1,7 @@
+@sule
 Feature: Check the title for each module in Lunch pageBackground:
-  @cool
+
+
   Scenario:  Verify the titles is display
     Given user is on the login page
     When user logs in using "in_ex_manager2@info.com" and "LLighg89"
@@ -36,4 +38,12 @@ Feature: Check the title for each module in Lunch pageBackground:
       |Documents           |
 
 
-
+#    Then the following link is clickable
+#    |Create   |
+#Scenario: Verify that Expenses description table can be able to fill it up
+#  Given user is on the login page
+#  When user logs in using "in_ex_manager2@info.com" and "LLighg89"
+#  Then Expenses title should be displayed
+#  And user should be able to click Expenses Button
+#  When user should be able to click "Create" button
+#  #Then user should be able
