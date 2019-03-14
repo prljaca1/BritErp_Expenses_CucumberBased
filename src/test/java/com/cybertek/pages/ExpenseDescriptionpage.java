@@ -6,6 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -39,11 +42,14 @@ public class ExpenseDescriptionpage {
     public WebElement Laetan;
     ////*[@id='o_field_input_734']
 
-//    @FindBy(xpath = "(//*[@id='ui-id-3']/li)[9]")
-//    public WebElement createAndEdit;
-//
+    @FindBy(xpath = "(//*[@id='ui-id-3']/li)[9]")
+    public WebElement createAndEdit;
 
+    @FindBy(xpath = "(//*[@id='ui-id-6']/li)[8]")
+    public WebElement searchMore;
 
+    @FindBy(xpath = "//*[@class='ui-sortable']/tr/td[4]")
+    public List<WebElement> DepartmaneList;
 
 
     public WebElement selectRandomTextList(List<WebElement> ListName) {
@@ -55,4 +61,5 @@ public class ExpenseDescriptionpage {
         return weblist.get(optionIndex);
     }
 
-}
+
+    }

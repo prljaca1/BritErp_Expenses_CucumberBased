@@ -10,7 +10,7 @@ Feature: login functionality
     Then Expenses title should be displayed
     And  user should click Expenses button
 
-  @w @db
+
   Scenario Outline:  As a manager login the page
     When user should be able to click "Create" button
 
@@ -23,8 +23,26 @@ Feature: login functionality
     Examples:
       |lunchProduct                |quantity  |unitPrice   |
       |6 ne                        |222222222 |2.2         |
-     # |Laetan                       |444444444 |5.7        |
-#      |Demokrasi                    |555555555 |5,6        |
+     |Laetan                       |444444444 |5.7        |
+     |Demokrasi                    |555555555 |5,6        |
+
+
+  Scenario:  As a manager login the page
+    When user should be able to click "Create" button
+    Then user should be able to click Searh more buttun under the employe
+    And verify that Depaertmants under the Employe list is mactches at the data base
+
+  @w @db
+
+  Scenario:  Verify that empoyee name at the excel files macths with the data bas
+    And User should be able to verify that employe name from excel file is visiable at the data base
+    And User should be able to verify that Department name from excel file is visiable at the data base
+
+
+
+
+
+
 
 
 
@@ -73,27 +91,27 @@ Feature: login functionality
 
 
 
-  Scenario Outline:  Verify that maneger should be able to fill up Expenses Desciription Table
-    When user logs in using "in_ex_manager2@info.com" and "LLighg89"
-    Then Expenses title should be displayed
-    And user should be able to click Expenses Button
-    When user should be able to click "Create" button
-#
-    Then  user should   sendKeys  "<Expense Description>" in Expense Description Line
-##    And  user should be  choice product name from drapdown   "<Product>"
-    And  user should be  sendKeys  "<Unit Price>" in Unit Price line
-    And  user should be  sendKeys  "<Quantity>" in Quantity line
-    And  user should be  sendKeys  "<Bill Reference>" in Bill Reference line
-##    And  user should be  sendKeys  "<Expense Date>" in Expense Date line
-##    And  user should be  choice Employee from dropdown   "<Employee>"
-##    And  user should be  choice Sale order from drop down  "<Sale Order>" in Sale order line
-##    Then Menegar can click save button
-#
-    Examples:
-      |Expense Description  |Unit Price        | Quantity      |Bill Reference|
-      |Regular  Expenses    |150               |  4            |Personel      |
-      |[EXP] Expenses       |25000             |  5            | Personel     |
-#
+#  Scenario Outline:  Verify that maneger should be able to fill up Expenses Desciription Table
+#    When user logs in using "in_ex_manager2@info.com" and "LLighg89"
+#    Then Expenses title should be displayed
+#    And user should be able to click Expenses Button
+#    When user should be able to click "Create" button
+##
+#    Then  user should   sendKeys  "<Expense Description>" in Expense Description Line
+###    And  user should be  choice product name from drapdown   "<Product>"
+#    And  user should be  sendKeys  "<Unit Price>" in Unit Price line
+#    And  user should be  sendKeys  "<Quantity>" in Quantity line
+#    And  user should be  sendKeys  "<Bill Reference>" in Bill Reference line
+###    And  user should be  sendKeys  "<Expense Date>" in Expense Date line
+###    And  user should be  choice Employee from dropdown   "<Employee>"
+###    And  user should be  choice Sale order from drop down  "<Sale Order>" in Sale order line
+###    Then Menegar can click save button
+##
+#    Examples:
+#      |Expense Description  |Unit Price        | Quantity      |Bill Reference|
+#      |Regular  Expenses    |150               |  4            |Personel      |
+#      |[EXP] Expenses       |25000             |  5            | Personel     |
+##
 #    Then Manger able to see Expense Description text at the DataBase
 #    And  Manger able to see Product text at the DataBase
 #    And  Manger able to see Unit Price text at the DataBase

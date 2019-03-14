@@ -1,6 +1,6 @@
 @mussei
 Feature: As a Expense manager2 I should able to approve or disapprove  the expense result
- # @BRIT-4089
+
   Background:
     Given user is on the login page
     When user logs in using "in_ex_manager2@info.com" and "LLighg89"

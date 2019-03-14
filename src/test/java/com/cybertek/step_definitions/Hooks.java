@@ -33,10 +33,10 @@ public class Hooks {
         }
 
         System.out.println("Closing driver");
-       // Driver.closeDriver();
+        Driver.closeDriver();
     }
 
-    @Before
+    @Before (value = "@db")
     public void setUpDBConnection() {
         DataBaseUtility.createConnection();
     }

@@ -15,12 +15,19 @@ public class testDATAbase {
   public static void setup(){
     DataBaseUtility.createConnection();
   }
-    @Test
-    public void test1(){
+//    @Test
+//    public void test1(){
+//    List<Map<String,Object>>columnNames;
+//      String sql="select * from employees;";
+//       columnNames=DataBaseUtility.getQueryResultMap(sql);
+//      System.out.println(columnNames);
+//  }
+  @Test
+  public void test2(){
     List<Map<String,Object>>columnNames;
-      String sql="select * from employees;";
-       columnNames=DataBaseUtility.getQueryResultMap(sql);
-      System.out.println(columnNames);
+    String sql="Select name from hr_expense;";
+    List<Object> List=DataBaseUtility.getColumnData(sql, "name");
+    System.out.println(List);
   }
     @AfterClass
   public static void setdown(){

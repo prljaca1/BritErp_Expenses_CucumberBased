@@ -1,4 +1,4 @@
-@wip
+
 Feature: login functionality
 
   Background:
@@ -15,7 +15,8 @@ Feature: login functionality
     And user should click Expenses button
 
 
-
+   Scenario: Manager login
+     Given User logs in with manager credentials and reach ExpensesAnalysis page
 
 
 

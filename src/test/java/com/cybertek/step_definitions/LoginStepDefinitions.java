@@ -1,5 +1,6 @@
 package com.cybertek.step_definitions;
 
+import com.cybertek.pages.ExpensesAnalysisPage;
 import com.cybertek.pages.LoginPage;
 import com.cybertek.utilities.BrowserUtils;
 import com.cybertek.utilities.ConfigurationReader;
@@ -14,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginStepDefinitions {
     LoginPage loginPage=new LoginPage();
+    ExpensesAnalysisPage expensesAnalysisPage= new ExpensesAnalysisPage();
 
     @Given("user is on the login page")
 
@@ -42,4 +44,18 @@ public class LoginStepDefinitions {
 
     }
 
+    @Given("User logs in with manager credentials and reach ExpensesAnalysis page")
+    public void user_logs_in_with_manager_credentials_and_reach_ExpensesAnalysis_page() {
+
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        loginPage.email.sendKeys("in_ex_manager2@info.com");
+        loginPage.password.sendKeys("LLighg89");
+        loginPage.loginButton.click();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 3);
+        wait.until(ExpectedConditions.visibilityOf(loginPage.ExpensesButton));
+        loginPage.ExpensesButton.click();
+        expensesAnalysisPage.ExpensesAnalysis.click();
+
+
+    }
 }
