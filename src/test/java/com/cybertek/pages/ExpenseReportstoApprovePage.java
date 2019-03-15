@@ -83,6 +83,10 @@ public class ExpenseReportstoApprovePage {
     @FindBy(xpath = "//p[@class='oe_view_nocontent_create']")
     public WebElement searchresult;
 
+    @FindBy (xpath = "//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content']/li")
+    public List<WebElement> allemployees;
+
+
     //public void Expense() {
     // expense.click();
 
@@ -93,8 +97,6 @@ public class ExpenseReportstoApprovePage {
     }
 
 }
-
-
 
 
 
