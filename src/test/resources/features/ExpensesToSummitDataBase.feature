@@ -1,7 +1,4 @@
 
-Feature: Check the title for each module in Lunch pageBackground:
-
-
 Feature: login functionality
 
   Background:
@@ -23,8 +20,8 @@ Feature: login functionality
     Examples:
       |lunchProduct                |quantity  |unitPrice   |
       |6 ne                        |222222222 |2.2         |
-     |Laetan                       |444444444 |5.7        |
-     |Demokrasi                    |555555555 |5,6        |
+      |Laetan                       |444444444 |5.7        |
+      |Demokrasi                    |555555555 |5,6        |
 
 
   Scenario:  As a manager login the page
@@ -33,14 +30,9 @@ Feature: login functionality
     And verify that Depaertmants under the Employe list is mactches at the data base
 
   @w @db
-
   Scenario:  Verify that empoyee name at the excel files macths with the data bas
     And User should be able to verify that employe name from excel file is visiable at the data base
     And User should be able to verify that Department name from excel file is visiable at the data base
-
-
-
-
 
 
 
